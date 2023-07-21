@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário HTML</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form class="container-formulario" action="http://localhost/meusite/register.php" method="POST">
+    <label for="nome">Nome:</label><br>
+    <input type="text" id="nome" name="name" 
+    required
+    oninvalid="this.setCustomValidity('Campo obrigatório, preencha o nome!')"
+    onvalid="this.setCustomValidity('')"
+    /><br><br>
+
+    <label for="telefone">Telefone:</label><br>
+    <input type="tel" id="telefone" name="phone" 
+    
+    required
+    oninvalid="this.setCustomValidity('Campo obrigatório, preencha o telefone!')"
+    onvalid="this.setCustomValidity('')"
+    /><br><br>
+
+    <label for="endereco">Endereço:</label><br>
+    <input type="text" id="endereco" name="address" 
+    required
+    oninvalid="this.setCustomValidity('Campo obrigatório, preencha o endereço!')"
+    onvalid="this.setCustomValidity('')"
+    /><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" 
+    required
+    oninvalid="this.setCustomValidity('Campo obrigatório, preencha o email!')"
+    onvalid="this.setCustomValidity('')"
+    /><br><br>
+    <div class="container-enviar">
+        <input class="botao-enviar" type="submit" id="submit" value="Enviar" /><br><br>
+    </div>
+    
+  </form>
+</body>
+</html>

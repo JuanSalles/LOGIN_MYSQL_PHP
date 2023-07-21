@@ -1,0 +1,62 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10%;
+    background-color: #3abaf5;
+}
+
+.container-formulario{
+    background-color: #272F40;
+    padding: 20px;
+    border-radius: 30px;
+    color: #3abaf5;
+    box-shadow: 3px 3px 15px 1px black;
+}
+
+.container-enviar{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botao-enviar{
+    padding: 3px;
+}
+
+.botao-registro{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+.imagem-busca-id{
+    width: 20px;
+}
+
+.botao-registro a{
+    font-size: 20px;
+}
+
+.botao-registro a:hover{
+    color: #F052F2;
+}
+a:visited, :link{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+

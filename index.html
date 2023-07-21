@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário HTML</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form class="container-formulario" action="http://localhost/meusite/login.php" method="POST">
+    <label for="user">Usuário:</label><br>
+    <input type="text" id="user" name="user" 
+    required
+    oninvalid="this.setCustomValidity('Preencha o nome de usuário')"
+    onvalid="this.setCustomValidity('')"
+    />
+    <br><br>
+
+    <label for="password">Senha:</label><br>
+    <input type="password" id="password" name="password" /><br><br>
+
+    <input class="botao-enviar" type="submit" id="submit" value="Logar" /><br><br>
+
+    <div class="botao-registro">
+        <a href="register.html">Registrar</a>
+        <a href="buscar.html"><img class="imagem-busca-id" src="icone-lupa-branca.png"></a>
+    </div>
+
+
+  </form>
+  
+</body>
+</html>

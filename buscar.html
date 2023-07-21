@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário HTML</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form class="container-formulario" action="http://localhost/meusite/get.php" method="GET">
+    <label for="user">Digite o ID:</label><br>
+    <input type="text" id="user" name="id" 
+    required
+    oninvalid="this.setCustomValidity('Preencha o nome de usuário')"
+    onvalid="this.setCustomValidity('')"
+    />
+    <br><br>
+
+    <input class="botao-enviar" type="submit" id="submit" value="Buscar" /><br><br>
+
+  </form>
+  
+</body>
+</html>
